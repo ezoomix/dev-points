@@ -1,0 +1,211 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <head>
+        <title>متجر</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="style.css">
+        <style>
+
+.mySlides {display:none;}
+            
+            .header{
+                overflow: hidden;
+                background-color: black;
+                width: 100%;
+            }
+            .header a{
+                float: right;
+                color: #fff;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                font-weight: bold;
+
+            }
+            .header a:hover{
+                background-color: #04AA6D;
+            }
+            .header a.active{
+                background-color: #04AA6D;
+                
+            }
+            .header a.car_bt{
+                background-color: #04AA6D;
+                float: left;
+                left: 0;
+            }
+            input[type=text], select {
+  width: 50%;
+  height:30px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 17px;
+
+}
+ .serch_box{
+    text-align: center;
+    
+
+ }
+ .serch_box a{
+    float: none;
+                color: #ffffff;
+                text-align: center;
+                padding: 10px 20px;
+                text-decoration: none;
+                font-size: 15px;
+                font-weight: bold;
+                border-radius: 15px;
+ }
+ .serch_box a:hover{
+    background-color: #04AA6D;
+
+
+ }
+ .serch_box a.serch_bt {
+    background-color: #04AA6D;
+
+ }
+ .footer{
+    overflow: hidden;
+                background-color: black;
+                width: 100%;
+ }
+                .footer p
+                {
+                    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+bottom: 0;
+position: static;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   padding: 5px 16px;
+   font-size: 17px;
+                font-weight: bold;
+                }
+    
+ 
+ #tb_show_main{
+   margin-left: auto;
+   margin-right: auto;
+ }
+#tb_show{
+    width: 30%;
+    border-collapse: collapse;
+    
+}
+#tb_show td{
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#tb_show tr:hover{
+    background-color: #04AA6D;
+}
+
+.line_main{
+    text-align: center;
+    font-size: 17px;
+    font-display:blod ;
+}
+
+        </style>
+    </head> 
+    <body  dir="rtl" lang="utf-8">
+      <div class="header">
+        <a class="active" href="#">الرئيسية</a>
+        <a href="#">المتجر</a>
+		 <a href="#">اعمالنا</a>
+        <a href="#">خدماتنا</a>
+        <a href="#">تواصل معانا</a>
+        <a class="car_bt" href="#">نقاط التطوير</a>
+      </div>
+      <div class="serch_box">
+        <input  type="text" placeholder="ابحث داخل الموقع...">
+      <a class="serch_bt" href="#">بحث</a>
+    </div>
+    
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="img_la.jpg" style="width:100%">
+  <img class="mySlides" src="img_ny.jpg" style="width:100%">
+  <img class="mySlides" src="img_chicago.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<div class="line_main">
+    <h1>ـــــــــــــــــ كاميرات المراقبة ـــــــــــــــــ</h1>
+</div>
+<div class="tb_show_main">
+    <table id="tb_show_main">
+       <tr>
+        <td> <table id="tb_show">
+            <tr>
+                <td><img src="IM_1.JPG"></td>
+            </tr>
+            <tr>
+                <td>2550ريال </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="العربة" ></td>
+            </tr>
+        </table></td>
+        <td> <table id="tb_show">
+            <tr>
+                <td><img src="IM_2.JPG"></td>
+            </tr>
+            <tr>
+                <td>2550ريال </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="العربة" ></td>
+            </tr>
+        </table>
+    </td>
+    <td> <table id="tb_show">
+        <tr>
+            <td><img src="IM_3.JPG"></td>
+        </tr>
+        <tr>
+            <td>2550ريال </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="العربة" ></td>
+        </tr>
+    </table>
+</td>
+       </tr>
+    </table>
+</div>
+    <div class="footer">
+    <p>
+        جميع الحقوق محفوظة 2023©</p>
+    </div>   
+    
+    </body>
+    
+</html>
